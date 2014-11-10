@@ -95,7 +95,7 @@
         youtubeLink: null,
         website: null,
         intervalMessages: [],
-        messageInterval: 5,
+        messageInterval: 6,
         songstats: false,
         commandLiteral: "!",
         blacklists: {
