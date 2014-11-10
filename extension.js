@@ -53,22 +53,22 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "Nightbot",
         language: "english",
         chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
-        maximumAfk: 120,
+        maximumAfk: 240,
         afkRemoval: true,
         maximumDc: 60,
-        bouncerPlus: true,
+        bouncerPlus: false,
         lockdownEnabled: false,
         lockGuard: false,
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
         timeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 5,
         autodisable: true,
-        commandCooldown: 30,
+        commandCooldown: 10,
         usercommandsEnabled: true,
         lockskipPosition: 3,
         lockskipReasons: [
