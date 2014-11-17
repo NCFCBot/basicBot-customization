@@ -9,9 +9,17 @@
 
         //Precaution to make sure it is assigned properly.
         var bot = window.bot;
+        var autoRoulette = false;
 
         //Load custom settings set below
         bot.retrieveSettings();
+
+        // Auto Roulette
+        setInterval(function () {
+            if(autoRoulette === true) {
+                API.sendChat("!roulette");
+            }
+        }, 1000 * 60 * 60);
 
         /*
          Extend the bot here, either by calling another function or here directly.
@@ -55,6 +63,20 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     bot.logNewBlacklistedSongs();
+                }
+            }
+        };
+
+        bot.commands.automateRoulette = {
+            command: ['aroulette', 'autoroulette'],
+            rank: 'manager',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    autoRoulette = !autoRoulette;
+                    API.sendChat("/me Roulette Automation set to " + autoRoulette);
                 }
             }
         };
