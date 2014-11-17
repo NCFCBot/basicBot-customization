@@ -90,7 +90,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     var sounds = Array("Nya!", "Nyah!", "Nyan!");
-                    API.sendChat("/me " + sounds[Math.floor(Math.random()*items.length)]);
+                    API.sendChat("/me " + sounds[Math.floor(Math.random()*sounds.length)]);
                 }
             }
         };
