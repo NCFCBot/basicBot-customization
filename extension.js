@@ -81,6 +81,20 @@
             }
         };
 
+        bot.commands.meowCommand = {
+            command: 'meow',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var sounds = Array("Nya!", "Nyah!", "Nyan!");
+                    API.sendChat("/me " + sounds[Math.floor(Math.random()*sounds.length)]);
+                }
+            }
+        };
+
         //Load the chat package again to account for any changes
         bot.loadChat();
 
