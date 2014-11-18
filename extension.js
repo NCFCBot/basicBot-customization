@@ -21,6 +21,20 @@
             }
         }, 1000 * 60 * 60);
 
+        API.on(API.ADVANCE, function () {
+            var toggle = $(".cycle-toggle");
+            if(API.getWaitList().length > 20) {
+                if (!toggle.hasClass("disabled")) {
+                    toggle.click();
+                }
+            }
+            if(API.getWaitList().length < 15) {
+                if (toggle.hasClass("disabled")) {
+                    toggle.click();
+                }
+            }
+        });
+
         /*
          Extend the bot here, either by calling another function or here directly.
          Model code for a bot command:
