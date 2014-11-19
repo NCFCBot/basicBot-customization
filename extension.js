@@ -33,6 +33,25 @@
                     toggle.click();
                 }
             }
+            
+            //Check song in history
+            setTimeout(function () {
+                var len = bot.room.historyList.length;
+                var temp = 0;
+                for(var i = 1; i <= 50; i++) {
+                    if((len - i - 1) < 0) {
+                        break;
+                    }
+                    else {
+                        temp = len - i - 1;
+                    }
+                    if(bot.room.historyList[temp][0] === API.getMedia().cid) {
+                        API.sendChat("/me " + API.getMedia().title + " was played too recently!");
+                        API.moderateForceSkip();
+                        break;
+                    }
+                }
+            }, 2000);
         });
 
         /*
