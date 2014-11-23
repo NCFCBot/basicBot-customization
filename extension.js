@@ -171,6 +171,8 @@
         filterChat: true,
         etaRestriction: true,
         welcome: false,
+        mehSkip: true,
+        mehSkipLimit: 10,
         opLink: null,
         rulesLink: null,
         themeLink: null,
