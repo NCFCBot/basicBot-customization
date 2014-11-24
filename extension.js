@@ -9,7 +9,7 @@
 
         //Precaution to make sure it is assigned properly.
         var bot = window.bot;
-        var autoRoulette = false;
+        var autoRoulette = true;
 
         //Load custom settings set below
         bot.retrieveSettings();
