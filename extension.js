@@ -45,8 +45,6 @@
                     else {
                         temp = len - i - 1;
                     }
-                    if(bot.room.historyList[temp][0] === "_NXrTujMP50")
-                        break;
                     if(bot.room.historyList[temp][0] === API.getMedia().cid) {
                         API.sendChat("/me " + API.getMedia().title + " was played too recently!");
                         API.moderateForceSkip();
