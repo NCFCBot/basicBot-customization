@@ -122,7 +122,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    var sounds = Array("Nya! :cirLewd: ", "Nyah! :cirLewd: ", "Nyan! :cirLewd: ");
+                    var sounds = Array("Nya! :cirLove: ", "Nyah! :cirLewd: ", "Nyan! :cirGlod: ");
                     API.sendChat("/me " + sounds[Math.floor(Math.random()*sounds.length)]);
                 }
             }
