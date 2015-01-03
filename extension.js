@@ -179,7 +179,7 @@
         themeLink: null,
         fbLink: null,
         youtubeLink: null,
-        website: null,
+        website: http://nightcorefc.com,
         intervalMessages: [],
         messageInterval: 6,
         songstats: false,
