@@ -139,7 +139,7 @@
         botName: "Night-botX",
         language: "english",
         chatLink: "https://rawgit.com/BrabbitX/basicBot/master/lang/en.json",
-        maximumAfk: 240,
+        maximumAfk: 60,
         afkRemoval: false,
         maximumDc: 20,
         bouncerPlus: false,
