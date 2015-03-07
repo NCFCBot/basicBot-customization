@@ -19,7 +19,7 @@
             if(autoRoulette === true) {
                 API.sendChat("!roulette");
             }
-        }, 1000 * 60 * 60);
+        }, 1000 * 60 * 55);
 
         API.on(API.ADVANCE, function () {
             var toggle = $(".cycle-toggle");
