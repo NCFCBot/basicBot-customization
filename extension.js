@@ -139,7 +139,7 @@
         botName: "Troll-botX",
         language: "english",
         chatLink: "https://rawgit.com/BrabbitX/basicBot/master/lang/en.json",
-        maximumAfk: 60,
+        maximumAfk: 120,
         afkRemoval: false,
         maximumDc: 20,
         bouncerPlus: false,
