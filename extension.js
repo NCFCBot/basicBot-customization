@@ -167,7 +167,7 @@
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
         motdEnabled: true,
-        motdInterval: 1,
+        motdInterval: 99,
         motd: "Tip: You can go fullscreen mode (video full size and no avatars) by goining into options then checking -Video only(No Avatars)- ",
         filterChat: true,
         etaRestriction: true,
