@@ -168,7 +168,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motd: "Tip: You can go *fullscreen* mode (video full size and no avatars) by goining into options then checking *Video only(No Avatars)*,
         filterChat: true,
         etaRestriction: true,
         welcome: false,
