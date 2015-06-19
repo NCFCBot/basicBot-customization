@@ -168,7 +168,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 65,
-        motd: "Event notice: Prepare for NCFC Unleashed on 20th of june for the whole day you will be able to play songs of up to 8 min, for more details http://postimg.org/image/o98no9hox/full/ " ,
+        motd: "Event notice: Event will be Live on 20th June Starting at 10am UTC/GMT+1, for more details http://postimg.org/image/o98no9hox/full/ " ,
         filterChat: true,
         etaRestriction: true,
         welcome: false,
