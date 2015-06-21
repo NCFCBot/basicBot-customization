@@ -168,7 +168,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 65,
-        motd: "Event notice: Event NCFC Unleashed is Live now, for more details http://postimg.org/image/o98no9hox/full/ " ,
+        motd: " All Five nights at freddies songs have been blacklisted nightcored or not. " ,
         filterChat: true,
         etaRestriction: true,
         welcome: false,
