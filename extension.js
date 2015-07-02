@@ -166,7 +166,7 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: true,
+        motdEnabled: false,
         motdInterval: 65,
         motd: " All Five nights at freddies songs have been blacklisted nightcored or not. " ,
         filterChat: true,
