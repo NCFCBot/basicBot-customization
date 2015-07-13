@@ -168,7 +168,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 365,
-        motd: " @everyone Vote For The Song You Want To Be Blacklisted --> http://strawpoll.me/4885966 Vote Now! " ,
+        motd: " Vote For The Song You Want To Be Blacklisted --> http://strawpoll.me/4885966 Vote Now! " ,
         filterChat: true,
         etaRestriction: true,
         welcome: false,
