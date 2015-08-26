@@ -179,7 +179,7 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
+        motdEnabled: true,
         motdInterval: 66,
         motd: " Remember to read the rules and check the blacklist info (welcome message), Also auto-join is strictly forbidden any one using it will be banned! :Rekt: " ,
         filterChat: true,
