@@ -180,7 +180,7 @@
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
         motdEnabled: true,
-        motdInterval: 66,
+        motdInterval: 31,
         motd: " Since plug is going to shut down, we are moving to https://synctube.org/r/Nightcore-Fanclub join us! It's still a new site and needs improvements, but it will get there! " ,
         filterChat: true,
         etaRestriction: true,
