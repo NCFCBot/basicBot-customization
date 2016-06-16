@@ -181,7 +181,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 31,
-        motd: " Enjoy the Music and Follow the Rules!A  qQ   " ,
+        motd: " Enjoy the Music and Follow the Rules! " ,
         filterChat: true,
         etaRestriction: true,
         welcome: false,
