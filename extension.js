@@ -151,7 +151,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "Troll-botX",
         language: "english",
-        chatLink: "https://rawgit.com/BrabbitX/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/NCFCBot/basicBot/master/lang/en.json",
         maximumAfk: 120,
         afkRemoval: false,
         maximumDc: 20,
@@ -198,12 +198,12 @@
         songstats: false,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/BrabbitX/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
-            OP: "https://rawgit.com/BrabbitX/basicBot-customization/master/blacklists/ExampleOPlist.json"
+            NSFW: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+            OP: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleOPlist.json"
         }
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/BrabbitX/basicBot/master/basicBot.js', extend);
+    $.getScript('https://rawgit.com/NCFCBot/basicBot/master/basicBot.js', extend);
 
 }).call(this);
