@@ -149,7 +149,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "NightBotX",
+        botName: "BotX",
         language: "english",
         chatLink: "https://rawgit.com/NCFCBot/basicBot/master/lang/en.json",
         maximumAfk: 120,
