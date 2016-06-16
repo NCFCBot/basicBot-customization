@@ -19,7 +19,7 @@
             if(autoRoulette === true) {
                 API.sendChat("!roulette");
             }
-        }, 1000 * 60 * 55);
+        }, 1000 * 60 * 40);
 
         API.on(API.ADVANCE, function () {
             var toggle = $(".cycle-toggle");
@@ -149,7 +149,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "Troll-botX",
+        botName: "BotX",
         language: "english",
         chatLink: "https://rawgit.com/NCFCBot/basicBot/master/lang/en.json",
         maximumAfk: 120,
