@@ -182,9 +182,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 10,
-        motd: "Welcome To NCFC Enjoy the Music and Follow the Rules!
-        Miku-Plugin: javascript:(function(){$.getScript('https://dl.dropboxusercontent.com/s/hw1qoddiuwb0gts/Plugin.js')
-        RCS-Plugin: https://rcs.radiant.dj/" ,
+        motd: "Welcome To NCFC Enjoy the Music and Follow the Rules! Miku-Plugin: javascript:(function(){$.getScript('https://dl.dropboxusercontent.com/s/hw1qoddiuwb0gts/Plugin.js') RCS-Plugin: https://rcs.radiant.dj/" ,
         filterChat: true,
         etaRestriction: true,
         welcome: true,
