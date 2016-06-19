@@ -155,7 +155,7 @@
         maximumAfk: 120,
         afkRemoval: false,
         maximumDc: 20,
-        bouncerPlus: false,
+        bouncerPlus: true,
         lockdownEnabled: false,
         lockGuard: false,
         maximumLocktime: 10,
@@ -174,6 +174,7 @@
             ["mix", "You played a mix, which is against the rules. "],
             ["sound", "The song you played had bad sound quality or no sound. "],
             ["nsfw", "The song you contained was NSFW (image or sound). "],
+            ["g", "The song doesn't fit the Genre of the room. "],
             ["unavailable", "The song you played was not available for some users. "],
             ["length", "The song you played was too long. "]
         ],
@@ -199,6 +200,7 @@
         commandLiteral: "!",
         blacklists: {
             NSFW: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
+            G: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleGlist.json",
             OP: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleOPlist.json"
         }
     }));
