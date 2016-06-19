@@ -191,7 +191,7 @@
         motd3: "RCS-Plugin: https://rcs.radiant.dj/ " ,
         filterChat: true,
         etaRestriction: true,
-        welcome: false,
+        welcome: true,
         mehSkip: true,
         mehSkipLimit: 10,
         opLink: null,
