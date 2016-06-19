@@ -23,12 +23,12 @@
 
         API.on(API.ADVANCE, function () {
             var toggle = $(".cycle-toggle");
-            if(API.getWaitList().length > 16) {
+            if(API.getWaitList().length > 25) {
                 if (!toggle.hasClass("disabled")) {
                     toggle.click();
                 }
             }
-            if(API.getWaitList().length < 12) {
+            if(API.getWaitList().length < 15) {
                 if (toggle.hasClass("disabled")) {
                     toggle.click();
                 }
@@ -81,7 +81,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Bacon!!!");
+                    API.sendChat("/me Gimme Bacon!!!");
                 }
             }
         };
@@ -181,8 +181,10 @@
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
         motdEnabled: true,
-        motdInterval: 31,
-        motd: " Enjoy the Music and Follow the Rules! " ,
+        motdInterval: 10,
+        motd: "Welcome To NCFC Enjoy the Music and Follow the Rules! " ,
+        motd: "Miku-Plugin: javascript:(function(){$.getScript('https://dl.dropboxusercontent.com/s/hw1qoddiuwb0gts/Plugin.js');}()); " ,
+        motd: "RCS-Plugin: https://rcs.radiant.dj/ " ,
         filterChat: true,
         etaRestriction: true,
         welcome: false,
