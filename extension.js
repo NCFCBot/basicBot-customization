@@ -194,7 +194,7 @@
         fbLink: null,
         youtubeLink: null,
         website: "http://nightcorefc.com",
-        intervalMessages: [Welcome To NCFC Enjoy the Music and Follow the Rules! RCS-Plugin: https://rcs.radiant.dj/],
+        intervalMessages: [],
         messageInterval: 10,
         songstats: false,
         commandLiteral: "!",
