@@ -159,7 +159,7 @@
         lockdownEnabled: false,
         lockGuard: false,
         maximumLocktime: 10,
-        cycleGuard: false,
+        cycleGuard: true,
         maximumCycletime: 10,
         timeGuard: true,
         maximumSongLength: 6.5,
