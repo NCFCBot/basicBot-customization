@@ -24,7 +24,7 @@
         API.on(API.ADVANCE, function () {
             var toggle = $(".cycle-toggle");
             if(API.getWaitList().length > 20) {
-                if (!toggle.hasClass("disabled")) {
+                if (!toggle.hasClass("enabled")) {
                     toggle.click();
                 }
             }
