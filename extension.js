@@ -128,9 +128,9 @@
             }
         };
 
- bot.commands.staff = {
+         bot.commands.staff = {
             command: 'staff',  
-            rank: 'user',
+            rank: 'residentdj',
             type: 'exact',
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
