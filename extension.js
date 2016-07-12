@@ -182,7 +182,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: true,
         motdInterval: 10,
-        motd: "Welcome To NCFC Enjoy the Music and Follow the Rules! Miku-Plugin: http://mikuplugin.nightcore-fantasia.net/ RCS-Plugin: https://rcs.radiant.dj/ . Public Discord For the Community: https://discord.gg/0inWxBNrSxSMtqsC " ,
+        motd: "Welcome To NCFC Enjoy the Music and Follow the Rules! Miku-Plugin: http://mikuplugin.nightcore-fantasia.net/ RCS-Plugin: https://rcs.radiant.dj/ . Public Discord For the Community: https://discord.gg/SvS39Pw " ,
         filterChat: true,
         etaRestriction: true,
         welcome: true,
