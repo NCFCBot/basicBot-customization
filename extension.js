@@ -130,7 +130,7 @@
 
 
         bot.commands.WoofCommand = {
-            command: 'Woof',
+            command: 'woof',
             rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
