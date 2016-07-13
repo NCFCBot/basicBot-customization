@@ -129,7 +129,7 @@
         };
 
 
-        bot.commands.WoofCommand = {
+        bot.commands.woofCommand = {
             command: 'woof',
             rank: 'user',
             type: 'exact',
@@ -137,11 +137,11 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    var sounds = Array("Woof! ", "Woooof! ", "HOWLLLLL! ", "Wof! ", "WOOF!! ", "SHADO Stop WOOFING ");
-                    API.sendChat("/me " + sounds[Math.floor(Math.random()*sounds.length)]);
+                    API.sendChat("Woof!");
                 }
             }
         };
+        
 
          bot.commands.staff = {
             command: 'staff',  
