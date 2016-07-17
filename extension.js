@@ -141,6 +141,18 @@
                 }
             }
         };
+              bot.commands.loliCommand = {
+            command: 'loli',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://image.prntscr.com/image/2e85dfb98bc5479d9ad9900608dac1b9.png");
+                }
+            }
+        };
         
 
          bot.commands.staff = {
