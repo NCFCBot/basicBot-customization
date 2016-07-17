@@ -137,7 +137,8 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Woof!");
+                    var sounds = Array("Woof! ", "Woooof! ", "SHADO STOPPP! ", "Grrrrr! ", "Wof ", "STAAAAHPP woofing at me! ");
+                    API.sendChat("/me " + sounds[Math.floor(Math.random()*sounds.length)]);
                 }
             }
         };
@@ -154,6 +155,18 @@
             }
         };
         
+             bot.commands.plotCommand = {
+            command: 'plot',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.makeagif.com/media/11-30-2015/JwWLXY.gif");
+                }
+            }
+        };
 
          bot.commands.staff = {
             command: 'staff',  
