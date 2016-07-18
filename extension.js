@@ -180,6 +180,71 @@
                 }
             }
         };
+        
+            bot.commands.rektCommand = {
+            command: 'rekt',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i0.kym-cdn.com/photos/images/masonry/000/739/555/d4c.gif");
+                }
+            }
+        };
+        
+            bot.commands.banhammerCommand = {
+            command: 'banhammer',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/O3DHIA5.gif");
+                }
+            }
+        };
+        
+            bot.commands.rockCommand = {
+            command: 'rock',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://66.media.tumblr.com/afaa3e27f774c3a391001ce90d5ebcfd/tumblr_mm1b8ysoEq1qklhrmo1_500.gif");
+                }
+            }
+        };
+        
+            bot.commands.ritziesCommand = {
+            command: 'ritzies',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.gifntext.com/99318-not-the-ritzies.gif");
+                }
+            }
+        };
+        
+                    bot.commands.lifeCommand = {
+            command: 'life',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://pa1.narvii.com/5778/4a263f135d32ba0bb1e4f466459d040653d221dd_hq.gif");
+                }
+            }
+        };
 
          bot.commands.staff = {
             command: 'staff',  
@@ -217,7 +282,7 @@
         timeGuard: true,
         maximumSongLength: 6.5,
         autodisable: false,
-        commandCooldown: 10,
+        commandCooldown: 5,
         usercommandsEnabled: true,
         lockskipPosition: 3,
         lockskipReasons: [
