@@ -163,7 +163,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("http://image.prntscr.com/image/bb0f011aef244cc1ac6022150f6d5ff0.png");
+                    API.sendChat("media/11-30-2015/JwWLXY.gif");
                 }
             }
         };
