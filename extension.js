@@ -163,7 +163,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("media/11-30-2015/JwWLXY.gif");
+                    API.sendChat("http://i.makeagif.com/media/11-30-2015/JwWLXY.gif");
                 }
             }
         };
