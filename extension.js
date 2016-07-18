@@ -258,6 +258,32 @@
                 }
             }
         };
+        
+                    bot.commands.smellCommand = {
+            command: 'smell',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://uploads.disquscdn.com/images/281a5b1b7268ec7497bea0cab218d63219af3aa46d99a34c42f50ef1312d9cd1.gif");
+                }
+            }
+        };
+        
+                    bot.commands.botCommand = {
+            command: 'bot',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://res.cloudinary.com/urbandictionary/image/upload/a_exif,c_fit,h_200,w_200/v1396227695/zjxrie5ljfnmbvznhdqh.jpg");
+                }
+            }
+        };
 
          bot.commands.staff = {
             command: 'staff',  
