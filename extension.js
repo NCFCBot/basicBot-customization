@@ -297,6 +297,32 @@
                 }
             }
         };
+        
+                    bot.commands.trapCommand = {
+            command: 'trap',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://66.media.tumblr.com/db145da80423cc223c45d7eae1eb1ab0/tumblr_o92199bqfv1qehrvso1_540.gif");
+                }
+            }
+        };
+        
+                       bot.commands.wbCommand = {
+            command: 'wb',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://data.whicdn.com/images/60559320/original.gif");
+                }
+            }
+        };
 
          bot.commands.staff = {
             command: 'staff',  
