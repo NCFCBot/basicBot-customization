@@ -349,6 +349,19 @@
                 }
             }
         };
+        
+                        bot.commands.pervCommand = {
+            command: 'perv',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://a.disquscdn.com/uploads/mediaembed/images/3994/342/original.gif");
+                }
+            }
+        };
 
          bot.commands.staff = {
             command: 'staff',  
