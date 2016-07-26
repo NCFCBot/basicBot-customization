@@ -362,6 +362,19 @@
                 }
             }
         };
+        
+                            bot.commands.justiceCommand = {
+            command: 'justice',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://i1.wp.com/img1.ak.crunchyroll.com/i/spire4/664df21ea49bb57a05aea291751164441408288565_full.jpg");
+                }
+            }
+        };
 
          bot.commands.staff = {
             command: 'staff',  
