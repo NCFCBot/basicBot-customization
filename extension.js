@@ -376,6 +376,32 @@
             }
         };
 
+                            bot.commands.wakeupCommand = {
+            command: 'wakeup',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://new4.fjcdn.com/gifs/Wake+up+toradora+style+d+more+here+wwwyoutubecom+user+squabanime+and+here_11e793_5134512.gif");
+                }
+            }
+        };
+        
+                            bot.commands.banhammer2Command = {
+            command: 'banhammer2',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/207278951289061376/5ece5139902683bc72def4e6141cb7fb4004dc6578a7b734d87036eb5a9b5939.gif");
+                }
+            }
+        };
+        
          bot.commands.staff = {
             command: 'staff',  
             rank: 'residentdj',
