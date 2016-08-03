@@ -454,6 +454,19 @@
             }
         };
         
+                                bot.commands.failCommand = {
+            command: 'fail',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://discordcdn.com/attachments/206337582739619841/210490466049851392/GwDmB2M_700wa_0.gif");
+                }
+            }
+        };
+        
          bot.commands.staff = {
             command: 'staff',  
             rank: 'residentdj',
