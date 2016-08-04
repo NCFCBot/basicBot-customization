@@ -467,6 +467,45 @@
             }
         };
         
+                                        bot.commands.gnCommand = {
+            command: 'gn',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://67.media.tumblr.com/cd644307d1a2155602ce2ab1b33efa14/tumblr_n02ucqF8c11sp3mbro1_500.gif");
+                }
+            }
+        };
+        
+                                                bot.commands.godlyfpCommand = {
+            command: 'godlyfp',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://vignette2.wikia.nocookie.net/ssb/images/a/ab/Jesus_facepalm.jpg");
+                }
+            }
+        };
+        
+                                                        bot.commands.impliedfpCommand = {
+            command: 'impliedfp',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://facepalm.motifake.com/image/demotivational-poster/0912/implied-facepalm-implied-facepalm-demotivational-poster-1259858393.jpg");
+                }
+            }
+        };
+        
          bot.commands.staff = {
             command: 'staff',  
             rank: 'residentdj',
