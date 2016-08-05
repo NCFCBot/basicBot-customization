@@ -506,6 +506,19 @@
             }
         };
         
+                                bot.commands.realplotCommand = {
+            command: 'realplot',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://megumi.img.s3.amazonaws.com/ceb1a1b19df912403b0204fb50148e95.gif");
+                }
+            }
+        };
+        
          bot.commands.staff = {
             command: 'staff',  
             rank: 'residentdj',
