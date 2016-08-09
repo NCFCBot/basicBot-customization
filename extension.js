@@ -519,6 +519,19 @@
             }
         };
         
+                                        bot.commands.tryitCommand = {
+            command: 'tryit',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://65.media.tumblr.com/c2f8981c663c044d052732e3fca93a63/tumblr_inline_npogm47i241szu3bc_500.gif");
+                }
+            }
+        };
+        
          bot.commands.staff = {
             command: 'staff',  
             rank: 'residentdj',
