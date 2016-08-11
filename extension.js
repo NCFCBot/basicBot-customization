@@ -21,18 +21,7 @@
             }
         }, 1000 * 60 * 40);
 
-        API.on(API.ADVANCE, function () {
-            var toggle = $(".cycle-toggle");
-            if(API.getWaitList().length > 12) {
-                if (!toggle.hasClass("disabled")) {
-                    toggle.click();
-                }
-            }
-            if(API.getWaitList().length < 10) {
-                if (toggle.hasClass("enabled")) {
-                    toggle.click();
-                }
-            }
+API.on(API.ADVANCE, function () { var toggle = $(".cycle-toggle"); if(API.getWaitList().length > 12) { if (!toggle.hasClass("enabled")) { toggle.click(); } else (toggle.hasClass("disabled")) { toggle.click(); } }
             
             //Check song in history
             setTimeout(function () {
