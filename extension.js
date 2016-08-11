@@ -533,10 +533,10 @@
         };
         
                                         bot.commands.cycleCommand = {
-            command: 'cycle',
+            command: 'cycle2',
             rank: 'manager',
             type: 'exact',
-            functionality: function () {
+            functionality: function (chat, cmd) {
             var toggle = $(".cycle-toggle");
             if(API.getWaitList().length > 12) {
                 if (!toggle.hasClass("enabled")) {
