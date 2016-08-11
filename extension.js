@@ -537,7 +537,6 @@
             rank: 'manager',
             type: 'exact',
             functionality: function (chat, cmd) {
-            var toggle = $(".cycle-toggle");
             if(API.getWaitList().length > 12) {
                 if (!toggle.hasClass("enabled")) {
                     toggle.click();
