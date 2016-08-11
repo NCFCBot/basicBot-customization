@@ -532,6 +532,23 @@
             }
         };
         
+                                        bot.commands.cycleCommand = {
+            command: 'cycle',
+            rank: 'manager',
+            type: 'exact',
+            functionality: function () {
+            var toggle = $(".cycle-toggle");
+            if(API.getWaitList().length > 12) {
+                if (!toggle.hasClass("enabled")) {
+                    toggle.click();
+                }
+            }
+            if(API.getWaitList().length < 10) {
+                if (toggle.hasClass("disabled")) {
+                    toggle.click();
+                }
+            }
+        
          bot.commands.staff = {
             command: 'staff',  
             rank: 'residentdj',
