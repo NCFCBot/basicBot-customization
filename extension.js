@@ -542,12 +542,12 @@
                 if (!toggle.hasClass("enabled")) {
                     toggle.click();
                 }
-            }
+            },
             if(API.getWaitList().length < 10) {
                 if (toggle.hasClass("disabled")) {
                     toggle.click();
                 }
-            }
+            };
         
          bot.commands.staff = {
             command: 'staff',  
