@@ -570,8 +570,8 @@
             }
         };
         
-                                        bot.commands.regretCommand = {
-            command: 'regret',
+                                        bot.commands.noregretCommand = {
+            command: 'noregret',
             rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
@@ -579,6 +579,32 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("http://i.imgur.com/MKwNdPd.gif");
+                }
+            }
+        };
+        
+                                    bot.commands.tinytrustCommand = {
+            command: 'tinytrust',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://s-media-cache-ak0.pinimg.com/564x/85/65/82/856582bb3a8668a84c3df05427ebcc16.jpg");
+                }
+            }
+        };
+        
+                                    bot.commands.brablaughCommand = {
+            command: 'brablaugh',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/BriNP.gif");
                 }
             }
         };
