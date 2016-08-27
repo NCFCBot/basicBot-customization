@@ -622,6 +622,71 @@
             }
         };
         
+                                 bot.commands.glCommand = {
+            command: 'gl',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://49.media.tumblr.com/ae34d3df51edc011da51ed7c1e26aefe/tumblr_o0g034ge1B1sa07uto1_540.gif");
+                }
+            }
+        };
+        
+                                    bot.commands.grouphugCommand = {
+            command: 'grouphug',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/218689694018437120/XSmLDWx.gif");
+                }
+            }
+        };
+        
+                                            bot.commands.bot2Command = {
+            command: 'bot2',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://www.rustywalrus.com/images/lg/d0.jpg");
+                }
+            }
+        };
+        
+                                            bot.commands.danceCommand = {
+            command: 'dance',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://2new3.fjcdn.com/reaction_gifs/Since+when+was+keemstar+a+vegan+_00e2a958982ff5fa629af00cd5f944fb.gif");
+                }
+            }
+        };
+        
+                                            bot.commands.bullshitCommand = {
+            command: 'bullshit',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/219011350158901249/ezgif.com-video-to-gif.gif");
+                }
+            }
+        };
+        
         
          bot.commands.staff = {
             command: 'staff',  
