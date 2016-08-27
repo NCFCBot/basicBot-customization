@@ -687,6 +687,19 @@
             }
         };
         
+                                        bot.commands.guiltyCommand = {
+            command: 'guilty',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://66.media.tumblr.com/7d613b6ca2d5dad3748f20c924ab1779/tumblr_inline_nlghh1foGJ1swlxsk.gif");
+                }
+            }
+        };
+        
         
          bot.commands.staff = {
             command: 'staff',  
