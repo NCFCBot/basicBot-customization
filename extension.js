@@ -739,6 +739,58 @@
             }
         };
         
+                                            bot.commands.fyesCommand = {
+            command: 'fyes',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://static1.e621.net/data/6f/dc/6fdc4750888c33990777695a90a135bd.png");
+                }
+            }
+        };
+        
+                                            bot.commands.innocentCommand = {
+            command: 'innocent',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://static1.e621.net/data/dd/2a/dd2ae7ed3de9ddc06a1003b7143abc71.jpg");
+                }
+            }
+        };
+        
+                                        bot.commands.gn2Command = {
+            command: 'gn2',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/xthao9n.gif");
+                }
+            }
+        };
+        
+                                        bot.commands.partycatCommand = {
+            command: 'partycat',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://media.giphy.com/media/nmsYm9iWKD8ac/giphy.gif");
+                }
+            }
+        };
+        
         
          bot.commands.staff = {
             command: 'staff',  
