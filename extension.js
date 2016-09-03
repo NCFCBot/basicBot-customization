@@ -791,6 +791,45 @@
             }
         };
         
+                                             bot.commands.hypnotoadCommand = {
+            command: 'hypnotoad',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://mlpforums.com/uploads/post_images/img-1384034-1-Bxp9A4B.gif");
+                }
+            }
+        };
+        
+                                            bot.commands.stressedCommand = {
+            command: 'stressed',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/221729203140296725/tumblr_miy7lmhgvn1rkmjjzo1_500.gif");
+                }
+            }
+        };
+        
+                                                bot.commands.sadCommand = {
+            command: 'sad',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://33.media.tumblr.com/205b4c6c68bdaa299d7f529f4a35cb05/tumblr_n7qysx1vL81qcwhdyo1_500.gif");
+                }
+            }
+        };
+        
                                     bot.commands.competitionCommand = {
             command: 'competition',
             rank: 'user',
