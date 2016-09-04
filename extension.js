@@ -830,6 +830,19 @@
             }
         };
         
+                                                bot.commands.gmCommand = {
+            command: 'gm',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://img1.joyreactor.cc/pics/post/Anime-%D0%B3%D0%B8%D1%84%D0%BA%D0%B8-Acchi-Kocchi-Tsumiki-Miniwa-454621.gif");
+                }
+            }
+        };
+        
                                     bot.commands.competitionCommand = {
             command: 'competition',
             rank: 'user',
