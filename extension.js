@@ -843,6 +843,32 @@
             }
         };
         
+                                            bot.commands.cuteCommand = {
+            command: 'cute',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/0hvcXXS.gif");
+                }
+            }
+        };
+        
+                                                    bot.commands.tableflipCommand = {
+            command: 'tableflip',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/ayAyZ6v.gif");
+                }
+            }
+        };
+        
                                     bot.commands.competitionCommand = {
             command: 'competition',
             rank: 'user',
