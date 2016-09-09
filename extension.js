@@ -882,6 +882,19 @@
             }
         };
         
+                                                bot.commands.sleepyCommand = {
+            command: 'sleepy',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://67.media.tumblr.com/tumblr_lxckd2bgyW1qkukto.gif");
+                }
+            }
+        };
+        
                                     bot.commands.competitionCommand = {
             command: 'competition',
             rank: 'user',
