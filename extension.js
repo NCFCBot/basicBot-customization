@@ -895,6 +895,32 @@
             }
         };
         
+                                            bot.commands.blushCommand = {
+            command: 'blush',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://img.buzzfeed.com/buzzfeed-static/static/2014-06/4/16/enhanced/webdr03/anigif_enhanced-buzz-26711-1401913848-7.gif");
+                }
+            }
+        };
+        
+                                                    bot.commands.megablushCommand = {
+            command: 'megablush',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://67.media.tumblr.com/6a3e50286b6f45fd74c515b66f81e471/tumblr_ni8yoi6qLO1u55xnmo4_500.gif");
+                }
+            }
+        };
+        
                                     bot.commands.competitionCommand = {
             command: 'competition',
             rank: 'user',
