@@ -921,6 +921,19 @@
             }
         };
         
+                                                bot.commands.evillaughCommand = {
+            command: 'evillaugh',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://66.media.tumblr.com/c81445923f61afd3b42fc99273163785/tumblr_myyk5n1pjP1tok0bho1_500.gif");
+                }
+            }
+        };
+        
                                     bot.commands.competitionCommand = {
             command: 'competition',
             rank: 'user',
