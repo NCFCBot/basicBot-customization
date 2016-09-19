@@ -986,6 +986,19 @@
             }
         };
         
+                                                    bot.commands.loliworshipCommand = {
+            command: 'loliworship',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://img.ifcdn.com/images/ee9825fc34c4f5696ed7bec2b2161b6bcb5d9620213570da259dc08b20583f46_1.gif");
+                }
+            }
+        };
+        
                                     bot.commands.competitionCommand = {
             command: 'competition',
             rank: 'user',
