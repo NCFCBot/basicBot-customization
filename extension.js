@@ -999,6 +999,32 @@
             }
         };
         
+                                                bot.commands.cutebiteCommand = {
+            command: 'cutebite',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/227734348412092417/VPhAwVK_1.gif");
+                }
+            }
+        };
+        
+                                                bot.commands.briberyCommand = {
+            command: 'bribery',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/227844588059099137/tumblr_nxrq6qSHTE1tga1sco1_500.gif");
+                }
+            }
+        };
+        
                                     bot.commands.competitionCommand = {
             command: 'competition',
             rank: 'user',
