@@ -1012,8 +1012,8 @@
             }
         };
         
-                                                bot.commands.briberyCommand = {
-            command: 'bribery',
+                                                bot.commands.bribeCommand = {
+            command: 'bribe',
             rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
