@@ -1090,6 +1090,19 @@
             }
         };
         
+                                                     bot.commands.eatingCommand = {
+            command: 'eating',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://68.media.tumblr.com/fd3f9f72db8a233e69f1abef0a41c453/tumblr_npcc08QXtu1upe1ufo1_540.gif");
+                }
+            }
+        };
+        
                                     bot.commands.competitionCommand = {
             command: 'competition',
             rank: 'user',
