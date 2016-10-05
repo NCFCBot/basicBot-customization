@@ -1103,6 +1103,19 @@
             }
         };
         
+                                                             bot.commands.furryCommand = {
+            command: 'furry',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://pre04.deviantart.net/f81b/th/pre/i/2015/221/6/e/im_a_furry_get_used_to_it_t_shirt_by_yukiin-d94zmha.png");
+                }
+            }
+        };
+        
                                     bot.commands.competitionCommand = {
             command: 'competition',
             rank: 'user',
