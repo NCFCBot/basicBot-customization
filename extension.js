@@ -414,8 +414,8 @@
             }
         };
         
-                                 bot.commands.kawaiiCommand = {
-            command: 'kawaii',
+                                 bot.commands.cute2Command = {
+            command: 'cute2',
             rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
@@ -1103,7 +1103,7 @@
             }
         };
         
-                                                             bot.commands.furryCommand = {
+                                                      bot.commands.furryCommand = {
             command: 'furry',
             rank: 'user',
             type: 'exact',
@@ -1112,6 +1112,32 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("http://pre04.deviantart.net/f81b/th/pre/i/2015/221/6/e/im_a_furry_get_used_to_it_t_shirt_by_yukiin-d94zmha.png");
+                }
+            }
+        };
+        
+                                                      bot.commands.kawaiiCommand = {
+            command: 'kawaii',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://media.giphy.com/media/Nn1BIPIuWUblu/giphy.gif");
+                }
+            }
+        };
+        
+                                                       bot.commands.backCommand = {
+            command: 'back',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/233884507231485954/tumblr_ob8o7e6czw1qda6uso1_500.gif");
                 }
             }
         };
