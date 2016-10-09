@@ -1142,6 +1142,45 @@
             }
         };
         
+                                                   bot.commands.feels2Command = {
+            command: 'feels2',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/234221379749281792/B9CU7AC.gif");
+                }
+            }
+        };
+        
+                                                bot.commands.facepalmCommand = {
+            command: 'facepalm',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://media.giphy.com/media/d2Z5caxpAqTPaVri/giphy.gif");
+                }
+            }
+        };
+        
+                                               bot.commands.loveCommand = {
+            command: 'love',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://media.tenor.co/images/979f60e5f7d173fc58c88069b34688fe/raw");
+                }
+            }
+        };
+        
                                     bot.commands.competitionCommand = {
             command: 'competition',
             rank: 'user',
