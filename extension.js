@@ -1245,6 +1245,19 @@
                 }
             }
         };
+        
+                                                     bot.commands.dance2Command = {
+            command: 'dance2',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://66.media.tumblr.com/31c91db0b76d312b966c6adfe1c3940a/tumblr_nz57a2TvRC1u17v9ro1_540.gif");
+                }
+            }
+        };
                          bot.commands.staff = {
             command: 'staff',  
             rank: 'user',
