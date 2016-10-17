@@ -1258,6 +1258,19 @@
                 }
             }
         };
+        
+                                                       bot.commands.gm2Command = {
+            command: 'gm2',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i1346.photobucket.com/albums/p682/Gfi2000/tumblr_mrp5mm5X111syw16so1_500_zps1936a1c8.gif");
+                }
+            }
+        };
                          bot.commands.staff = {
             command: 'staff',  
             rank: 'user',
