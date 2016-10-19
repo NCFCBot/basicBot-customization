@@ -1271,6 +1271,46 @@
                 }
             }
         };
+        
+                                                        bot.commands.leekspinCommand = {
+            command: 'leekspin',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://stream1.gifsoup.com/view4/1901817/miku-leekspin-o.gif");
+                }
+            }
+        };
+        
+                                                         bot.commands.leekspin2Command = {
+            command: 'leekspin2',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://cdn0.dailydot.com/uploaded/images/original/2012/3/11/Leekspin.gif");
+                }
+            }
+        };
+        
+                                                        bot.commands.bakaCommand = {
+            command: 'baka',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://24.media.tumblr.com/tumblr_ltjfcxi2X61r1n5pqo1_500.gif");
+                }
+            }
+        };
+       
                          bot.commands.staff = {
             command: 'staff',  
             rank: 'user',
