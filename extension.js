@@ -1323,6 +1323,32 @@
                 }
             }
         };
+        
+                                                        bot.commands.hailkiritoCommand = {
+            command: 'hailkirito',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://img.memecdn.com/all-hail-kirito-vi-britannia_o_975736.jpg");
+                }
+            }
+        };
+        
+                                                          bot.commands.hailkirito2Command = {
+            command: 'hailkirito2',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://cdn.meme.am/instances/400x/61104610.jpg");
+                }
+            }
+        };
        
                          bot.commands.staff = {
             command: 'staff',  
