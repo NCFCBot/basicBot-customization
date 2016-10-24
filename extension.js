@@ -1349,6 +1349,19 @@
                 }
             }
         };
+        
+                                                         bot.commands.wolfysongCommand = {
+            command: 'wolfysong',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://embed.gyazo.com/4565bf286dfb709da62ec1bfa5fa71da.png");
+                }
+            }
+        };
        
                          bot.commands.staff = {
             command: 'staff',  
