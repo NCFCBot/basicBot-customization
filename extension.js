@@ -1402,6 +1402,19 @@
             }
         };
         
+                                                       bot.commands.bustedCommand = {
+            command: 'busted',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://myanimelist.cdn-dena.com/s/common/uploaded_files/1448416762-c4fea080c937bdde8ac476e4bfa76efe.png");
+                }
+            }
+        };
+        
                          bot.commands.staff = {
             command: 'staff',  
             rank: 'user',
