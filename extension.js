@@ -1436,7 +1436,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("https://imgflip.com/gif/1egve2");
+                    API.sendChat("http://i.imgur.com/CXaoy2K.gif");
                 }
             }
         };
