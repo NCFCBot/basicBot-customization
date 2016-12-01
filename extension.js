@@ -929,7 +929,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("http://i.imgur.com/aWgb4AL.gif");
+                    API.sendChat("http://i.imgur.com/y0c7ZFK.gif");
                 }
             }
         };
