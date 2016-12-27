@@ -1203,10 +1203,24 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/234962808096292864/200.gif");
+                    API.sendChat("http://31.media.tumblr.com/tumblr_meapvb6j301rzgqyto1_500.png");
                 }
             }
         };
+        
+                                                 bot.commands.senpaisharkCommand = {
+            command: 'senpaishark',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/CDQ4lgD.gif");
+                }
+            }
+        };
+        
                                     bot.commands.competitionCommand = {
             command: 'competition',
             rank: 'user',
