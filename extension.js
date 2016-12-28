@@ -1468,6 +1468,32 @@
             }
         };
         
+                                                bot.commands.watCommand = {
+            command: 'wat',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/263497228985827328/7f83e550da264fc1948fffab7e8c59bd.png");
+                }
+            }
+        };
+        
+                                                 bot.commands.cookiesCommand = {
+            command: 'cookies',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/263497346346647554/sBs1ITniVp7tm.gif");
+                }
+            }
+        };
+        
                          bot.commands.staff = {
             command: 'staff',  
             rank: 'user',
