@@ -656,7 +656,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("http://2new3.fjcdn.com/reaction_gifs/Since+when+was+keemstar+a+vegan+_00e2a958982ff5fa629af00cd5f944fb.gif");
+                    API.sendChat("http://i.imgur.com/B03QOLy.gif");
                 }
             }
         };
@@ -1490,6 +1490,32 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/263497346346647554/sBs1ITniVp7tm.gif");
+                }
+            }
+        };
+        
+                                                bot.commands.dance2Command = {
+            command: 'dance2',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/263828817829822464/Youknowyunowhatanimewasscarynotanotherhah_579041_5340159.gif");
+                }
+            }
+        };
+        
+                                                bot.commands.youdiedCommand = {
+            command: 'youdied',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/263829360887201793/1363397443656_display.gif");
                 }
             }
         };
