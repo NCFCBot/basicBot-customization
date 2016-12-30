@@ -1494,8 +1494,8 @@
             }
         };
         
-                                                bot.commands.dance2Command = {
-            command: 'dance2',
+                                                bot.commands.dance3Command = {
+            command: 'dance3',
             rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
