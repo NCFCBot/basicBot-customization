@@ -1567,7 +1567,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("https://github.com/NCFCBot/Commands/wiki/NCFC-Emotes");
+                    API.sendChat("/me RCS emotes: http://tiny.cc/emotes");
                 }
             }
         };
