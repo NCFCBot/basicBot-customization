@@ -1572,6 +1572,45 @@
             }
         };
         
+                                                bot.commands.fitemehCommand = {
+            command: 'fitemeh',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/HvYicVT.gif");
+                }
+            }
+        };
+        
+                                            bot.commands.wootwootCommand = {
+            command: 'wootwoot',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/Z2YhHih.gif");
+                }
+            }
+        };
+        
+                                         bot.commands.nomCommand = {
+            command: 'nom',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/5TwOTbT.gif");
+                }
+            }
+        };
+        
                                                  bot.commands.emotesCommand = {
             command: 'emotes',
             rank: 'user',
