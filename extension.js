@@ -804,8 +804,8 @@
             }
         };
         
-                                                bot.commands.sadCommand = {
-            command: 'sad',
+                                                bot.commands.criCommand = {
+            command: 'cri',
             rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
@@ -813,6 +813,19 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("http://33.media.tumblr.com/205b4c6c68bdaa299d7f529f4a35cb05/tumblr_n7qysx1vL81qcwhdyo1_500.gif");
+                }
+            }
+        };
+        
+                                                 bot.commands.cri1Command = {
+            command: 'cri1',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/h44VUV1.gif");
                 }
             }
         };
@@ -1607,6 +1620,45 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("http://i.imgur.com/5TwOTbT.gif");
+                }
+            }
+        };
+        
+                                            bot.commands.thumpCommand = {
+            command: 'thump',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/SYoJQFQ.gif");
+                }
+            }
+        };
+        
+                                              bot.commands.thump1Command = {
+            command: 'thump1',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/gbcdErn.gif");
+                }
+            }
+        };
+        
+                                              bot.commands.haiCommand = {
+            command: 'hai',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/r6VSHc5.gif");
                 }
             }
         };
