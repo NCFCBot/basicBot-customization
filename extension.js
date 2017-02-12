@@ -1689,6 +1689,32 @@
             }
         };
         
+                                             bot.commands.brofistCommand = {
+            command: 'brofist',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/277580607351947265/tumblr_mpztecP2jZ1s3kgaso1_500.gif");
+                }
+            }
+        };
+        
+                                               bot.commands.blush2Command = {
+            command: 'blush2',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://cdn.discordapp.com/attachments/206337582739619841/280200783075737610/tumblr_m8inwrnXfm1r5wy3zo1_500.gif");
+                }
+            }
+        };
+        
                                                  bot.commands.emotesCommand = {
             command: 'emotes',
             rank: 'user',
