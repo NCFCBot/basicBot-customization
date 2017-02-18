@@ -1715,6 +1715,45 @@
             }
         };
         
+                                                bot.commands.kingclapCommand = {
+            command: 'kingclap',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/BU198OS.gif");
+                }
+            }
+        };
+        
+                                                bot.commands.ninjaCommand = {
+            command: 'ninja',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/Ak2lyqi.gif");
+                }
+            }
+        };
+        
+                                                 bot.commands.forecastCommand = {
+            command: 'forecast',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("http://i.imgur.com/c75SXBq.png");
+                }
+            }
+        };
+        
                                                  bot.commands.emotesCommand = {
             command: 'emotes',
             rank: 'user',
