@@ -1754,8 +1754,8 @@
             }
         };
         
-                                                  bot.commands.hammerCommand = {
-            command: 'hammer',
+                                                  bot.commands.bhammerCommand = {
+            command: 'bhammer',
             rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
