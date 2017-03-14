@@ -1038,8 +1038,8 @@
             }
         };
         
-                                                bot.commands.headshotCommand = {
-            command: 'headshot',
+                                                bot.commands.headsmashCommand = {
+            command: 'headsmash',
             rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
