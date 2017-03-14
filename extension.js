@@ -856,8 +856,8 @@
             }
         };
         
-                                                    bot.commands.tableflipCommand = {
-            command: 'tableflip',
+                                                    bot.commands.tableflip1Command = {
+            command: 'tableflip1',
             rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
