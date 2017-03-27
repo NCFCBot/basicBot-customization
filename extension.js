@@ -1779,6 +1779,19 @@
                 }
             }
         };
+        
+                                              bot.commands.kiritoloveCommand = {
+            command: 'kiritolove',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://s-media-cache-ak0.pinimg.com/564x/e2/6c/d5/e26cd5fb5ec5271ca5b465fa77ac9d54.jpg");
+                }
+            }
+        };
                                                  bot.commands.emotesCommand = {
             command: 'emotes',
             rank: 'user',
