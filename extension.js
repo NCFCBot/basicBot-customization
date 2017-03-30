@@ -474,7 +474,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("https://67.media.tumblr.com/cd644307d1a2155602ce2ab1b33efa14/tumblr_n02ucqF8c11sp3mbro1_500.gif");
+                    API.sendChat("http://i.imgur.com/xthao9n.gif");
                 }
             }
         };
@@ -1789,6 +1789,18 @@
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("https://s-media-cache-ak0.pinimg.com/564x/e2/6c/d5/e26cd5fb5ec5271ca5b465fa77ac9d54.jpg");
+                }
+            }
+        };
+                                               bot.commands.wolftfCommand = {
+            command: 'wolftf',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("https://i.gyazo.com/77df61849e9bf04cee817aadfe32b902.png");
                 }
             }
         };
