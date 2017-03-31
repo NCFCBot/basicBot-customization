@@ -474,7 +474,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("http://i.imgur.com/xthao9n.gif");
+                    API.sendChat("http://i.imgur.com/oEMMlQD.gif");
                 }
             }
         };
@@ -526,7 +526,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("http://65.media.tumblr.com/c2f8981c663c044d052732e3fca93a63/tumblr_inline_npogm47i241szu3bc_500.gif");
+                    API.sendChat("http://i.imgur.com/lYCoU1a.gif");
                 }
             }
         };
@@ -890,7 +890,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("http://67.media.tumblr.com/tumblr_lxckd2bgyW1qkukto.gif");
+                    API.sendChat("http://i.imgur.com/VF1gegA.gif");
                 }
             }
         };
@@ -916,7 +916,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("http://67.media.tumblr.com/6a3e50286b6f45fd74c515b66f81e471/tumblr_ni8yoi6qLO1u55xnmo4_500.gif");
+                    API.sendChat("http://i.imgur.com/q0SPSM1.gif");
                 }
             }
         };
@@ -981,7 +981,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("https://67.media.tumblr.com/d83e916bcc928752478a545886881301/tumblr_nvo4cpWSRM1uh48xoo1_500.gif");
+                    API.sendChat("http://i.imgur.com/h0K8GGz.gif");
                 }
             }
         };
