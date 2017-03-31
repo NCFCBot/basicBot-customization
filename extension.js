@@ -1904,7 +1904,7 @@
         mehSkip: true,
         mehSkipLimit: 10,
         opLink: null,
-        rulesLink: "Nightcore Fanclub Rules: https://goo.gl/bkFnFJ",
+        rulesLink: "Nightcore Fanclub Rules: https://goo.gl/O16vw7",
         themeLink: null,
         fbLink: null,
         youtubeLink: null,
