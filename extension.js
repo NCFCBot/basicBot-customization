@@ -1843,7 +1843,7 @@
         };
         
                                                       bot.commands.socketCommand = {
-            command: 'joined using the Socket app for iPhone/iPad! Download it for free at http://socket.dj',
+            command: 'joined_using_the_Socket_app_for_iPhone/iPad!_Download_it_for_free_at_http://socket.dj',
             rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
