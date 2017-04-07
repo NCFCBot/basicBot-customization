@@ -1841,6 +1841,18 @@
                 }
             }
         };
+                                           bot.commands.socketCommand = {
+            command: 'joined_using_the_Socket_app_for_iPhone/iPad!_Download_it_for_free_at_http://socket.dj',
+            rank: 'user',
+            type: 'exact',
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("Please dont spam");
+                }
+            }
+};
         
                                                  bot.commands.emotesCommand = {
             command: 'emotes',
