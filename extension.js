@@ -1847,7 +1847,7 @@
             rank: 'user',
             type: 'exact',
             functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length joined== cmd.length) return void (0);
+                if (this.type === 'exact' && chat.message.length return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("Please dont spam");
