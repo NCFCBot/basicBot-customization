@@ -1867,7 +1867,7 @@
                 }
             }
         };
-                                                bot.commands.rdjappCommand = {
+        /*                                        bot.commands.rdjappCommand = {
             command: 'rdjapp',
             rank: 'user',
             type: 'exact',
@@ -1879,7 +1879,7 @@
                 }
             }
         };
-        
+       */ 
                          bot.commands.staff = {
             command: 'staff',  
             rank: 'user',
