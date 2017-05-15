@@ -2008,7 +2008,7 @@
         mehSkip: true,
         mehSkipLimit: 10,
         opLink: null,
-        rulesLink: "Nightcore Fanclub Rules: https://goo.gl/5snvwI",
+        rulesLink: "Nightcore Fanclub Rules: https://goo.gl/mTdSv1",
         themeLink: null,
         fbLink: null,
         youtubeLink: null,
