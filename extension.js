@@ -1994,6 +1994,7 @@
             ["nsfw", "The song you contained was NSFW (image or sound). "],
             ["g", "The song doesn't fit the Genre of the room. "],
             ["bq", "The song has really bad quality and therefore it was skipped. "],
+            ["s", "The song doesn't fit the current season and therefore it was skipped. "],
             ["unavailable", "The song you played was not available for some users. "],
             ["length", "The song you played was too long. "]
         ],
@@ -2021,7 +2022,8 @@
             NSFW: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleNSFWlist.json",
             G: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleGlist.json",
             BQ: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleBQlist.json",
-            OP: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleOPlist.json"
+            S: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleSlist.json",
+            OP: "https://rawgit.com/NCFCBot/basicBot-customization/master/blacklists/ExampleOPlist.json",
         }
     }));
 
